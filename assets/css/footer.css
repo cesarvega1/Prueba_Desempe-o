@@ -1,0 +1,131 @@
+/* ===========================
+   FOOTER.CSS – Footer Section
+   =========================== */
+
+.footer {
+  background: #060606;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-2xl);
+}
+
+/* Grid layout for footer columns */
+.footer__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg) var(--space-xl);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+/* Column heading */
+.footer__heading {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+  position: relative;
+  padding-bottom: var(--space-sm);
+}
+
+.footer__heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 24px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+/* Footer list */
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__list li {
+  font-size: 0.82rem;
+  color: var(--color-text-dim);
+  line-height: 1.4;
+  transition: color var(--transition-base);
+}
+
+.footer__list a {
+  color: var(--color-text-dim);
+  transition: color var(--transition-base), padding-left var(--transition-fast);
+  display: inline-block;
+}
+
+.footer__list a:hover {
+  color: var(--color-accent);
+  padding-left: 4px;
+}
+
+.footer__redes {
+  font-size: 0.82rem;
+  color: var(--color-text-dim);
+  line-height: 1.5;
+  transition: color var(--transition-base);
+
+
+}
+
+/* Footer bottom bar */
+.footer__bottom {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) var(--space-lg);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.footer__bottom p {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  letter-spacing: 0.05em;
+}
+
+.footer__bottom strong {
+  color: var(--color-accent);
+}
+
+.menu-toogle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: rgb(182, 4, 4);
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background: #333;
+  transition: all 0.3s ease;
+}
+
+/* Animación a X */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menú escondido por defecto */
+.menu {
+  display: none;
+}
+.menu.show {
+  display: block;
+}

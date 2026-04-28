@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEROSMITH</title>
+  <!-- Google Fonts y css-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600;700&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <img src="assets/img/aerosmith.png" alt="Shattered Riffs Logo" class="header__logo-img" />
+        <span class="header__logo-text">AEROS<br /><strong>MITH</strong></span>
+      </a>
+      <!-- Hamburger button  -->
+      <button class="hamburger" id="Hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header__nav" id="main-nav">
+        <ul class="header__nav-list">
+          <li><a href="#events" class="header__nav-link">Events</a></li>
+          <li><a href="#about" class="header__nav-link">About</a></li>
+          <li><a href="#multimedia" class="header__nav-link">Media</a></li>
+          <li><a href="#contact" class="header__nav-link header__nav-link--contact">Contact</a></li>
+        </ul>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->|
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__pretitle">UPCOMING WORLD TOUR 2026</p>
+      <h1 class="hero__title">ROCK THE NIGHT –<br />UPCOMING TOUR</h1>
+      <a href="#events" class="hero__cta">VIEW ALL EVENTS</a>
+    </div>
+    <div class="hero__scroll-hint">↓</div>
+  </section>
+
+  <!-- ===== EVENTS ===== -->
+  <section class="events" id="events">
+    <div class="events__container">
+      <h2 class="events__title">Upcoming Events</h2>
+      <div class="events__table-wrapper">
+        <table class="events__table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>City</th>
+              <th>place</th>
+              <th>Tickets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Date"><span class="events__date-day">15</span><span class="events__date-month">MAY</span>
+              </td>
+              <td data-label="City">Barranquilla</td>
+              <td data-label="Venue">Estadio Metopolitano</td>
+              <td data-label="Tickets"><a href="https://www.tuboleta.com/es" class="events__buy-btn">BUY NOW</a></td>
+            </tr>
+            <tr>
+              <td data-label="Date"><span class="events__date-day">19</span><span class="events__date-month">MAY</span>
+              </td>
+              <td data-label="City">Bogota</td>
+              <td data-label="Venue">Estadio el campin</td>
+              <td data-label="Tickets"><a href="https://www.tuboleta.com/es" class="events__buy-btn">BUY NOW</a></td>
+            </tr>
+            <tr class="events__row--highlight">
+              <td data-label="Date"><span class="events__date-day">24</span><span class="events__date-month">MAY</span>
+              </td>
+              <td data-label="City">Cali</td>
+              <td data-label="Venue">Pascual Guerrero</td>
+              <td data-label="Tickets"><a href="https://www.tuboleta.com/es" class="events__buy-btn">BUY NOW</a></td>
+            </tr>
+            <tr>
+              <td data-label="Date"><span class="events__date-day">25</span><span class="events__date-month">MAY</span>
+              </td>
+              <td data-label="City">Medellin</td>
+              <td data-label="Venue">Atanasio Girardot</td>
+              <td data-label="Tickets"><a href="https://www.tuboleta.com/es" class="events__buy-btn">BUY NOW</a></td>
+            </tr>
+            <tr>
+              <td data-label="Date"><span class="events__date-day">27</span><span class="events__date-month">JUN</span>
+              </td>
+              <td data-label="City">Valledupar</td>
+              <td data-label="Venue">Armando Maestre</td>
+              <td data-label="Tickets"><a href="https://www.tuboleta.com/es" class="events__buy-btn">BUY NOW</a></td>
+            </tr>
+            <tr>
+              <td data-label="Date"><span class="events__date-day">30</span><span class="events__date-month">JUN</span>
+              </td>
+              <td data-label="City">Bucaramanga</td>
+              <td data-label="Venue">Americo Montanini</td>
+              <td data-label="Tickets"><a href="https://www.tuboleta.com/es" class="events__buy-btn">BUY NOW</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="about__container">
+      <div class="about__image-col">
+        <img src="assets/img/aerosmith.png" alt="The Band" class="about__image" />
+      </div>
+      <div class="about__content-col">
+        <h2 class="about__title">About the Band</h2>
+        <p class="about__text">
+          Aerosmith is a legendary American rock band formed in Boston in 1970, with Steven Tyler, Joe Perry, Tom
+          Hamilton, Joey Kramer, and Brad Whitford. Known as "The Bad Boys from Boston," they blended blues-based hard
+          rock with pop, metal, and R&B, selling over 150 million albums worldwide. Their hits include "Dream On," "Walk
+          Down This Way," and "Don't Wanna Miss a Thing." </p>
+        <h3 class="about__values-title">OUR VALUES</h3>
+        <ul class="about__values-list">
+          <li>Authentic Sound</li>
+          <li>High Energy</li>
+          <li>Fan Connection</li>
+        </ul>
+        <div class="about__extra-shows">
+          <div class="about__show-card">
+            <p class="about__show-date">15 MAY</p>
+            <p class="about__show-info">Estadio Metropolitano<br />Barranquilla</p>
+            <a href="https://www.tuboleta.com/es" class="about__show-btn">BUY NOW</a>
+          </div>
+          <div class="about__show-card">
+            <p class="about__show-date">30 JUN</p>
+            <p class="about__show-info">Americo Montanini<br />Bucaramanga</p>
+            <a href="https://www.tuboleta.com/es" class="about__show-btn">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MULTIMEDIA ===== -->
+  <section class="multimedia" id="multimedia">
+    <div class="multimedia__container">
+      <h2 class="multimedia__title">Multimedia</h2>
+      <div class="multimedia__grid">
+        <div class="multimedia__item">
+          <img src="assets/img/img-1.jpeg" />
+        </div>
+        <div class="multimedia__item">
+          <img src="assets/img/img-2.jpg" />
+        </div>
+        <div class="multimedia__item">
+          <img src="assets/img/img-3.jpeg" />
+        </div>
+        <div class="multimedia__item multimedia__item--video">
+          <div class="multimedia__video-placeholder">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qfNmyxV2Ncw?si=EF45ihbB6TtPPPgk"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          </div>
+        </div>
+        <div class="multimedia__item">
+          <img src="assets/img/img-4.jpg" />
+        </div>
+        <div class="multimedia__item">
+          <img src="assets/img/img-5.jpg" />
+        </div>
+        <div class="multimedia__item">
+          <img src="assets/img/img-6.avif" />
+        </div>
+        <div class="multimedia__item">
+          <img src="assets/img/img-7.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer__container">
+      <div class="footer__col">
+        <h4 class="footer__heading">EVENTS</h4>
+        <ul class="footer__list">
+          <li><a href="#events">Tickets</a></li>
+
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">ABOUT</h4>
+        <ul class="footer__list">
+          <li><a href="#about">History</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">MUSIC</h4>
+        <ul class="footer__list">
+          <li><a
+              href="https://www.aerosmith.com/news/aerosmith-celebrate-five-decades-of-groundbreaking-self-titled-debut-album-with-new-aerosmith-legendary-edition-out-now">Latest
+              Album</a></li>
+          <li><a href="https://www.spirit-of-metal.com/es/band/aerosmith">Discography</a></li>
+          <li><a
+              href="https://www.rollingstone.com/music/music-lists/best-aerosmith-songs-1235084147/make-it-1973-1235084148/">Top
+              Hits</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">BAND INFO</h4>
+        <ul class="footer__list">
+          <li>Authentic Sound</li>
+          <li>High Energy</li>
+          <li>Fan Connection</li>
+
+        </ul>
+      </div>
+      <div class="footer__col1">
+        <h4 class="footer__heading">Redes Sociales</h4>
+        <ul class="footer__redes">
+          <li><a href="https://www.instagram.com/reel/DJwu2ZhME9M/"> Instagram</a></li>
+          <li><a href="https://open.spotify.com/user/aerosmith?locale=es&fo=1"> Spotify</a></li>
+          <li><a href="https://www.youtube.com/channel/UCBxdHQVOaZhUOIj_3gt2FYw"> YouTube</a></li>
+
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <p>© Pagina Oficial <strong>Aerosmith</strong> Diseñada por Cjvm</p>
+    </div>
+
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

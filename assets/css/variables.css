@@ -1,0 +1,47 @@
+/* ===========================
+   VARIABLES.CSS – Design Tokens
+   =========================== */
+
+:root {
+  /* Colors */
+  --color-bg:         #0a0a0a;
+  --color-surface:    #111111;
+  --color-surface-2:  #1a1a1a;
+  --color-border:     #2a2a2a;
+  --color-accent:     #c0392b;
+  --color-accent-2:   #e74c3c;
+  --color-accent-glow:rgba(192, 57, 43, 0.35);
+  --color-text:       #f0f0f0;
+  --color-text-muted: #888888;
+  --color-text-dim:   #555555;
+  --color-white:      #ffffff;
+  --color-black:      #000000;
+
+  /* Typography */
+  --font-display: 'Bebas Neue', 'Impact', sans-serif;
+  --font-heading: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body:    'Barlow', 'Helvetica', sans-serif;
+
+  /* Spacing */
+  --space-xs:  0.25rem;
+  --space-sm:  0.5rem;
+  --space-md:  1rem;
+  --space-lg:  2rem;
+  --space-xl:  4rem;
+  --space-2xl: 6rem;
+
+  /* Layout */
+  --max-width:       1200px;
+  --header-height:   68px;
+  --border-radius:   2px;
+  --border-radius-sm:1px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Shadows */
+  --shadow-accent: 0 0 20px var(--color-accent-glow);
+  --shadow-card:   0 4px 24px rgba(0,0,0,0.6);
+}

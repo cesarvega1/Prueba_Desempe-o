@@ -1,0 +1,173 @@
+/* ===========================
+   HEADER.CSS – Navigation & Header
+   =========================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: rgba(8, 8, 8, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 1000;
+  transition: background var(--transition-base), box-shadow var(--transition-base);
+}
+
+.header.scrolled {
+  background: rgba(4, 4, 4, 0.98);
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Container */
+.header__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+/* Logo */
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header__logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius);
+}
+
+.header__logo-text {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.header__logo-text strong {
+  display: block;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* Nav */
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.header__nav-link {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.header__nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width var(--transition-base);
+}
+
+.header__nav-link:hover {
+  color: var(--color-text);
+}
+
+.header__nav-link:hover::after {
+  width: 100%;
+}
+
+.header__nav-link--contact {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.header__nav-link--contact:hover {
+  color: var(--color-accent-2);
+}
+
+ /* 1. Ocultar el botón en computadoras/tablets grandes */
+.hamburger {
+  display: none; /* No se ve en PC */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+ .menu-toggle{
+  background-color: azure;
+  
+ }
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background: #333;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 767px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    width: 220px;
+    background: #000;
+    
+    /* 👇 oculto por defecto */
+    display: none;
+    flex-direction: column;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  /* 👇 cuando se activa */
+  .header__nav.active {
+    display: flex;
+  }
+}
+
+
